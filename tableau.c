@@ -40,3 +40,32 @@ void copie(int tableauOriginal[], int tableauCopie[], int tailleTableau)
     }
     
 }
+
+void maximumTableau(int tableau[], int tailleTableau, int valeurMax)
+{
+    for (int i = 0; i < tailleTableau; i++)
+    {
+        if (tableau[i] > valeurMax)
+        {
+            tableau[i] = 0;
+        }
+        
+    }
+}
+
+void ordonnerTableau(int tableau[], int tailleTableau)
+{
+    for (int i = 0; i < tailleTableau; i++)
+    {
+        for (int j = i+1 ; j < tailleTableau; j++)
+        {
+            if (tableau[i] > tableau[j])
+            {
+                int a = 0;
+                a = tableau[j];
+                tableau[j] = tableau[i];
+                tableau[i] = a;
+            }
+        }
+    }
+}

@@ -14,5 +14,17 @@ int main(int argc, char const *argv[])
 
     copie(tableau, tableauCopie, 5);
 
+    maximumTableau(tableauCopie, 5, 14);
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%d", tableauCopie[i]);
+    }
+    
+    ordonnerTableau(tableau, 5);
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%d", tableau[i]);
+    }
+
     return 0;
 }
